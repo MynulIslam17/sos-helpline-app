@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomePage"
+    android:background="#EDE7F6"
+
+    >
+
+
+    <!--whole body-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <!--999 part-->
+            <TextView
+                android:id="@+id/tvText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emergency Help \nNeeded?"
+                android:textSize="40sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tvText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Just hold the button to call 999"
+                android:textSize="17sp"
+                android:textColor="#aaa"
+                android:layout_below="@+id/tvText1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                />
+
+            <pl.bclogic.pulsator4droid.library.PulsatorLayout
+                android:id="@+id/pulsator"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:pulse_count="5"
+                app:pulse_duration="2000"
+                app:pulse_repeat="0"
+                app:pulse_color="#00B8D4"
+                app:pulse_startFromScratch="true"
+                app:pulse_interpolator="Decelerate"
+                android:layout_below="@+id/tvText2"
+             >
+
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/HelpLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="7dp"
+                app:cardCornerRadius="90dp"
+                android:layout_below="@id/tvText2"
+               android:layout_centerInParent="true"
+                android:backgroundTint="#B9F6CA"
+                android:layout_marginBottom="20dp"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/helpLay"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/mobile"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvEmergencyNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="999"
+                        android:textStyle="bold"
+                        android:textSize="40sp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#fff"
+                        />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+             <!--circle part end-->
+
+            <TextView
+                android:id="@+id/tvText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Want more Specific?"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/pulsator"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tvText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick the Division and find your location."
+                android:textSize="16sp"
+                android:textColor="#aaa"
+                android:layout_below="@id/tvText3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                />
+
+            <!--999 part end-->
+
+            <!--start division part-->
+
+            <TextView
+                android:id="@+id/tvDiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_below="@id/tvText4"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tvSeeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvText4"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+
+                android:text="See All "
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <!--hotizontal scroll view for division-->
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_below="@id/tvDiv"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    >
+                    <!--div1-->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/divDhaka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+
+                            android:layout_width="140dp"
+                            android:layout_height="100dp"
+                            android:text="Dhaka"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            />
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!--div1 end -->
+
+                    <!--div2-->
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/divBarisal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="100dp"
+                            android:text="Barisal"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            />
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!--div2 end-->
+
+                    <!--div3-->
+
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/divChittagong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="100dp"
+                            android:text="Chittagong"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            />
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!--div3 end-->
+
+                    <!--div4-->>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/divKhulna"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="100dp"
+                            android:text="Khulna"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!--div 4end-->
+
+
+                    <!--div5-->
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/divRajshahi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="100dp"
+                            android:text="Rajshahi "
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!--div5 end-->
+
+                    <!--div6-->
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/divRangpur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="100dp"
+                            android:text="Rangpur"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!--div6 end-->
+
+
+                    <!--div7-->
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/divSylhet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="100dp"
+                            android:text="Sylhet "
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!--div7 end-->
+
+
+
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

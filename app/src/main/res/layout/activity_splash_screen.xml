@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash_Screen"
+    android:orientation="vertical"
+    android:background="#ffc247"
+    >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/policeman"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="35dp"
+
+        />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bSafe SOS"
+        android:textSize="47sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textAlignment="center"
+        android:textColor="#fffdfd"
+        />
+
+       <TextView
+           android:id="@+id/appSlogan"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Ready to respond, ready to help..."
+            android:textColor="#C4FFFDFD"
+            android:gravity="center"
+             android:textStyle="bold"
+             />
+
+     <TextView
+         android:id="@+id/appVersion"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:text="Developed  by Noyon \nversion v1.0"
+         android:textColor="#fffdfd"
+         android:gravity="center|bottom"
+         android:layout_marginBottom="10dp"
+         android:textSize="14sp"
+         android:fontFamily="sans-serif-medium"
+         />
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

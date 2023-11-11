@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingPage"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+    >
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="➤ About bSafe SoS App"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#4DB6AC"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="⚫ bSafe Sos is an emergency helpline app.Through this app you can contact the nearest police station for help in emergency moments based on your area.."
+         android:textSize="17sp"
+         android:textColor="#000"
+         android:layout_marginBottom="15dp"
+         />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="➤ How to make an emergency call"
+        android:textSize="35sp"
+        android:textColor="#4DB6AC"
+        android:layout_marginBottom="10dp"
+
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚫ Make sure that all your family members know the emergenccy number 999 and can use it properly.\n\n⚫ When Calling the emergency line,start by describing what has happened.\n\n⚫ Before making emergency call, guarantee your safety. Move away from danger or hide from the danger."
+        android:textSize="17sp"
+        android:textColor="#000"
+        android:layout_marginBottom="15dp"
+
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="➤ Version v01"
+        android:textSize="35sp"
+        android:textColor="#4DB6AC"
+
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚫For trial purpose"
+        android:textSize="17sp"
+        android:textColor="#000"
+        android:layout_marginBottom="10dp"
+
+        />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
